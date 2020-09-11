@@ -1,0 +1,37 @@
+<div class="popup_sec" *ngIf='popup'>
+  <div class="clos_btn"><img src="assets/images/clos.png" alt="" (click)='showpopup()'/></div>
+  <div class="pop_hdr">Upload Your Post</div>
+    <form [formGroup]="postForm">
+      <table>
+        <tr>
+          <td>Select Your Pet Categories</td>
+          <td>
+            <select name="cate" formControlName="cate">
+              <option value="0">Choose Your Option</option>
+              <option *ngFor='let i of catedata' value="{{i.name}}">{{i.name}}</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Discriptions</td>
+          <td><textarea name="dis" formControlName="dis" id="" cols="11" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td>Choose Image</td>
+          <td><input type="file" name='pic' formControlName="pic" (change)='onselect($event)'></td>
+        </tr>
+        <input class="btn btn-success" type="submit" (click)='addpost()' value="Post...">
+      </table>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="rght_btn"> <span class="rght_btn_icon"><img src="assets/images/btn_iconb.png" alt="up" /></span> <span
+    class="btn_sep"><img src="assets/images/btn_sep.png" alt="sep" /></span> <a class="nav-link" style="cursor: pointer;" (click)='showpopup()'>Upload Post</a> </div>

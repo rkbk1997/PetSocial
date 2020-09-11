@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="content">
+    <div class="content_rgt">
+      <div class="login_sec">
+        <h1>Add Categories</h1>
+        <form [formGroup]="cateForm">
+          <ul>
+            <li><span>Categories Name</span>
+              <input type="text" name="cate" formControlName="cate" placeholder="Enter your categories name" required></li>
+            <li><span>Select Image/Icon</span>
+              <input type="file" name="image" formControlName="image"  placeholder="Enter your password" (change)='select($event)' required></li>
+            <li><input type="button" class="btn btn-success" (click)='addcate()'  value="Add In"></li>
+          </ul>
+          </form>
+
+      </div>
+    </div>
+
+    <app-login-left></app-login-left>
+
+  </div>
+</div>

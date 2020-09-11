@@ -1,0 +1,142 @@
+/*******Header********/
+
+.header {
+	float: left;
+	width: 90%;
+	padding: 0% 5% 0% 5%;
+	height: 66px;
+	background-color: #ffa21d;
+}
+.header_lft {
+	float: left;
+	width: 59%;
+	height: auto;
+}
+.logo {
+	float: left;
+	width: 162px;
+	height: 94px;
+	/* background-image: url(../images/logo_bg.png); */
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.logo img {
+	margin: 10px 0px 0px 0px;
+}
+.nav {
+	float: left;
+	width: 68%;
+	height: auto;
+	margin-left: 8%;
+}
+.nav ul {
+	float: left;
+	width: 100%;
+}
+.nav ul li {
+	float: left;
+	font-size: 15px;
+	text-align: left;
+	line-height: 66px;
+	margin-right: 5%;
+}
+.nav ul li a {
+	color: #FFF;
+	padding-bottom: 25px;
+}
+.nav ul li:last-child {
+	margin-right: 0%;
+}
+.nav ul li a:hover {
+	/* background-image: url(../images/arw.png); */
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 12px;
+	height: 7px;
+}
+.nav ul li a.active {
+	/* background-image: url(../images/arw.png); */
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 12px;
+	height: 7px;
+}
+.header_rgt {
+	float: right;
+	width: 38%;
+	height: auto;
+	padding-top: 1%;
+}
+.flag_div {
+	float: left;
+	/* background-image: url(../images/arw2.png); */
+	background-position: right;
+	background-repeat: no-repeat;
+	margin-top: 12px;
+}
+.flag_div img {
+	float: left;
+	margin-right: 17px;
+}
+.txt_box {
+	float: left;
+	/* background-image: url(../images/serch.png); */
+	background-position: 8px;
+	text-indent: 30px;
+	background-repeat: no-repeat;
+	margin-left: 5%;
+	font-size: 13px;
+	font-style: italic;
+	color: #000000;
+	background-color: #ffe3bc;
+	border: 0px;
+	width: 208px;
+	height: 31px;
+	margin-top: 1%;
+}
+.msg_box {
+	float: left;
+	margin-left: 5%;
+	/* background: url(../images/msg_bx.png) no-repeat 0px 10px; */
+	width: 42px;
+	height: 39px;
+}
+.msg_count {
+	border-radius: 20px;
+	width: 30px;
+	height: 30px;
+	line-height: 29px;
+	float: right;
+	background: #f68312;
+	border: 3px solid #ffa21d;
+	margin: -10px -16px 0px 0px;
+	text-align: center;
+	text-indent: -1px;
+}
+.msg_box a {
+	color: #fff;
+}
+.info_div {
+	float: right;
+	width: 21%;
+}
+.image_div {
+	float: left;
+	border-radius: 22px;
+	background-color: #ffffff;
+	width: 44px;
+	height: 34px;
+	text-align: center;
+	padding-top: 7px;
+}
+.info_div1 {
+	float: right;
+	/* background-image: url(../images/arw2.png); */
+	width: 37%;
+	color: #FFF;
+	margin-top: 13%;
+	font-size: 14px;
+	text-align: left;
+	background-repeat: no-repeat;
+	background-position: right;
+}

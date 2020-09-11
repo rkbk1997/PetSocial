@@ -1,0 +1,9 @@
+.container{
+  height: 700px;
+  width: 90%;
+  overflow-x: hidden;
+  /* z-index: -9; */
+}
+.contnt_2{
+  width:670px !important;
+}
