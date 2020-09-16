@@ -35,7 +35,7 @@ export class ForgetPasswordComponent implements OnInit {
 
   closepopup(): any{
     this.forgetpopup = false;
-    this.router.navigate(['/']);
+    this.router.navigate(['/reset']);
   }
 
 }
