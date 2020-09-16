@@ -24,7 +24,7 @@ export class UserService {
   }
 
   addpost(body): any{
-    console.log('user service call')
+    console.log('user service call');
     return this.http.post( environment.apiurl + '/user/addpost', body , {
       // observe: 'body',
       // withCredentials: true,
@@ -37,7 +37,15 @@ export class UserService {
   }
 
   like(body): any {
-    console.log('body in service=',body)
+    console.log('body in service=', body);
     return this.http.post(environment.apiurl + '/user/like', body);
+  }
+  getpost(uid): any{
+    console.log('body in user=', uid);
+    return this.http.post(environment.apiurl + '/user/singlepost', {uid});
+  }
+
+  getcomment(body): any{
+    return this.http.post(environment.apiurl + '/user/comment', body);
   }
 }

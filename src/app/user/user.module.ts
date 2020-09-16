@@ -7,13 +7,16 @@ import { MenuComponent } from './menu/menu.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { SharedComponentModule } from '../shared-component/shared-component.module';
 import { SignalpostComponent } from './signalpost/signalpost.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [HomeComponent, MenuComponent, TimelineComponent, SignalpostComponent],
   imports: [
     CommonModule,
     UserRoutingModule,
-    SharedComponentModule
+    SharedComponentModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     HomeComponent,

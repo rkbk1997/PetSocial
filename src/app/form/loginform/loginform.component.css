@@ -3,3 +3,8 @@
   color: black !important;
   font-size: 15px !important;
 }
+input[type='text']{
+  color: black !important;
+  font-size: 15px !important;  
+  text-transform: unset;
+}

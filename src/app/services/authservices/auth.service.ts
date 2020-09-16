@@ -34,6 +34,4 @@ export class AuthService {
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
   }
-
-
 }

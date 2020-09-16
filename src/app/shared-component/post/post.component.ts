@@ -15,17 +15,19 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
     this.userservice.viewPost()
-    .subscribe(
-      res =>{ this.postdata = res,
-        console.log('post=',res)
-      console.log('likes=', res[0].likes);}
-    );
+      .subscribe(
+        res => {
+          this.postdata = res,
+          console.log('post=', res);
+          console.log('likes=', res[0].likes);
+        }
+      );
   }
 
   checkme(likes): any {
-    if (likes.indexOf(localStorage.getItem('username')) < 0){
+    if (likes.indexOf(localStorage.getItem('username')) < 0) {
       return true;
-    }else{
+    } else {
       return false;
     }
   }
@@ -34,13 +36,13 @@ export class PostComponent implements OnInit {
     this.likedata.pid = ID;
     this.likedata.uid = localStorage.getItem('username');
     this.userservice.like(this.likedata)
-    .subscribe(
-      res=>{
-        this.ngOnInit();
-        console.log(res);
-      },
-    );
-    console.log('id=',this.likedata );
+      .subscribe(
+        res => {
+          this.ngOnInit();
+          console.log(res);
+        },
+      );
+    console.log('id=', this.likedata);
   }
 
 }

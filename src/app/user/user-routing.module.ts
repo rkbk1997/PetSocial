@@ -15,7 +15,7 @@ const routes: Routes = [
         component: TimelineComponent
       },
       {
-        path: 'signalpost',
+        path: 'signalpost/:id',
         component: SignalpostComponent
       },
       {

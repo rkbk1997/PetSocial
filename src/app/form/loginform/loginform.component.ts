@@ -3,13 +3,14 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../.././services/authservices/auth.service';
 import { Router } from '@angular/router';
 import { UserService } from '../.././services/userservices/user.service';
+
 @Component({
   selector: 'app-loginform',
   templateUrl: './loginform.component.html',
   styleUrls: ['./loginform.component.css']
 })
 export class LoginformComponent implements OnInit {
-  message;
+  message: string;
   username = false;
   password = false;
 
@@ -41,7 +42,6 @@ export class LoginformComponent implements OnInit {
         },
         err => this.router.navigate(['/'])
       );
-
   }
 
   focus(): any {
@@ -86,5 +86,4 @@ export class LoginformComponent implements OnInit {
         );
     }
   }
-
 }

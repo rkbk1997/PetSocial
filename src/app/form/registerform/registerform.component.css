@@ -7,3 +7,12 @@
 .ng-untouched{
   border:none !important;
 } */
+.container{
+  font-family: 'Times New Roman', Times, serif;
+  color: black !important;
+  font-size: 15px !important;
+}
+input[type='text']{
+  color: black !important;
+  font-size: 15px !important;  
+}
