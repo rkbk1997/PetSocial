@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ForgetPasswordComponent } from '../form/forget-password/forget-password.component';
 import { LoginformComponent } from '../form/loginform/loginform.component';
 import { RegisterformComponent } from '../form/registerform/registerform.component';
 import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
@@ -12,6 +13,10 @@ const routes: Routes = [
     path: 'register',
     component: RegisterformComponent
   },
+  {
+    path: 'forget',
+    component: ForgetPasswordComponent
+  }
   // {
   //   path: '**',
   //   component: PagenotfoundComponent

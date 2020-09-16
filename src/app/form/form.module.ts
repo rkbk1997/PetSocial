@@ -7,8 +7,10 @@ import { RegisterformComponent } from './registerform/registerform.component';
 import { SharedComponentModule } from '../shared-component/shared-component.module';
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {FormModuleModule} from '../form-module/form-module.module';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 @NgModule({
-  declarations: [LoginformComponent, RegisterformComponent],
+  declarations: [LoginformComponent, RegisterformComponent, ForgetPasswordComponent, ResetPasswordComponent],
   imports: [
     CommonModule,
     FormRoutingModule,
@@ -19,7 +21,9 @@ import {FormModuleModule} from '../form-module/form-module.module';
   ],
   exports: [
     LoginformComponent,
-    RegisterformComponent
+    RegisterformComponent,
+    ForgetPasswordComponent,
+    ResetPasswordComponent
   ]
 })
 export class FormModule { }

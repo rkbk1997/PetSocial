@@ -74,10 +74,10 @@
           <li *cdkVirtualFor="let i of postdata.comments">
             <div class="list_image">
               <div class="image_sec"><img src="assets/images/post_img.png"></div>
-              <div class="image_name">{{i.name}}</div>
+              <div class="image_name">{{i.name | titlecase}}</div>
             </div>
             <div class="list_info">
-              {{i.dis}}
+              {{i.dis | titlecase}}
             </div>
             <div class="cmnt_div">    
             </div>

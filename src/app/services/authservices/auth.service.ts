@@ -34,4 +34,8 @@ export class AuthService {
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
   }
+
+  getforget(body): any{
+    return this.http.post(environment.apiurl + '/forget', body );
+  }
 }
