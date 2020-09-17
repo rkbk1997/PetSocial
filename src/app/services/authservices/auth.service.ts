@@ -38,4 +38,8 @@ export class AuthService {
   getforget(body): any{
     return this.http.post(environment.apiurl + '/forget', body );
   }
+
+  getresetdata(body): any{
+    return this.http.post(environment.apiurl + '/reset', body );
+  }
 }
