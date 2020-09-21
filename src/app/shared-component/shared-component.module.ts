@@ -12,6 +12,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { CategoriesListComponent } from './categories-list/categories-list.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [SocialAppComponent, RightnavbarComponent,
@@ -21,7 +22,8 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     SharedComponentRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    ScrollingModule
+    ScrollingModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     SocialAppComponent,
@@ -32,7 +34,8 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     ProfileComponent,
     FeatureComponent,
     CategoriesListComponent,
-    ScrollingModule
+    ScrollingModule,
+    MatProgressSpinnerModule
   ]
 })
 export class SharedComponentModule { }

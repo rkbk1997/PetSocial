@@ -16,7 +16,7 @@ export class ResetPasswordComponent implements OnInit {
   restinfo = {
     email: '',
     password: ''
-  }
+  };
   constructor(private route: ActivatedRoute, private auth: AuthService, private router: Router) { }
 
   ngOnInit(): void {
@@ -38,7 +38,7 @@ export class ResetPasswordComponent implements OnInit {
             alert('Something Went Worng');
           }
         },
-      )
+      );
 
     }else{
       alert('password Not Matched');

@@ -27,6 +27,7 @@ export class AuthService {
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
   }
+
   logout(): any {
     return this.http.get(environment.apiurl + '/logout', {
       observe: 'body',

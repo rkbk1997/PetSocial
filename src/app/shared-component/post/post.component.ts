@@ -11,6 +11,7 @@ export class PostComponent implements OnInit {
     pid: '',
     uid: ''
   };
+  showSpinner = false;
   constructor(private userservice: UserService) { }
 
   ngOnInit(): void {
@@ -45,4 +46,13 @@ export class PostComponent implements OnInit {
     console.log('id=', this.likedata);
   }
 
+  onContainerScroll(e: Event): any {
+    console.log((e.target as Element).scrollTop);
+    if ((e.target as Element).scrollTop % 1000 === 0 ){
+      this.showSpinner = true;
+      setTimeout(() => {
+        this.showSpinner = false;
+      }, 5000);
+    }
+  }
 }
